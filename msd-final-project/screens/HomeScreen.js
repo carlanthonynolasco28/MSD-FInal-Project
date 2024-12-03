@@ -1,14 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  FlatList,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-  Alert,
-  ActivityIndicator,
-} from "react-native";
+import {View, Text, FlatList, TextInput, TouchableOpacity, StyleSheet, Alert, ActivityIndicator,} from "react-native";
 import { getTasks, deleteTask } from "../AsyncStorage";
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -88,7 +79,6 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      {/* Search and Filter Section */}
       <View style={styles.searchFilterContainer}>
         <TextInput
           style={styles.searchInput}
