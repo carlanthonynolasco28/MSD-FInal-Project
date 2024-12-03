@@ -24,7 +24,7 @@ export const updateTask = async (updatedTask) => {
   return newTasks;
 };
 
-// Delete a task
+
 export const deleteTask = async (id) => {
   const tasks = await getTasks();
   const newTasks = tasks.filter((task) => task.id !== id);
